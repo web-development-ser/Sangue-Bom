@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Form, Button, Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
+import "./style.css";
 
 export default function BloodDonationForm() {
   const [formData, setFormData] = useState({
@@ -62,7 +63,7 @@ export default function BloodDonationForm() {
   };
 
   return (
-    <Container className="mt-5">
+    <Container className="mt-5 container_form">
       <h1>Cadastro de Doação de Sangue</h1>
       <Form onSubmit={handleSubmit}>
         <Form.Group controlId="name">

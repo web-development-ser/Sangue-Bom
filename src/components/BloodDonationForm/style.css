@@ -1,0 +1,10 @@
+.container_form {
+    width: 35%;
+    border: 2px solid silver;
+    padding: 1.3rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+.container_form .form-control  {
+    margin: 0.1rem 0 1.3rem 0;
+}
