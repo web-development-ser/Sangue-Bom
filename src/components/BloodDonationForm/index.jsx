@@ -1,24 +1,25 @@
-import React, { useState, useEffect } from 'react';
-import { Form, Button, Container } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import axios from 'axios';
+import React, { useState, useEffect } from "react";
+import { Form, Button, Container } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+import axios from "axios";
+import "./style.css";
 
 export default function BloodDonationForm() {
   const [formData, setFormData] = useState({
-    name: '',
-    bloodType: '',
-    cep: '',
-    address: '',
-    city: '',
-    state: '',
+    name: "",
+    bloodType: "",
+    cep: "",
+    address: "",
+    city: "",
+    state: "",
   });
 
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const savedData = JSON.parse(localStorage.getItem('bloodDonors')) || [];
+    const savedData = JSON.parse(localStorage.getItem("bloodDonors")) || [];
     if (savedData.length) {
-      console.log('Dados carregados do localStorage:', savedData);
+      console.log("Dados carregados do localStorage:", savedData);
     }
   }, []);
 
@@ -32,7 +33,7 @@ export default function BloodDonationForm() {
         state: response.data.uf,
       });
     } catch (err) {
-      setError('Erro ao buscar endereço');
+      setError("Erro ao buscar endereço");
     }
   };
 
@@ -43,26 +44,30 @@ export default function BloodDonationForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const existingDonors = JSON.parse(localStorage.getItem('bloodDonors')) || [];
+    const existingDonors = JSON.parse(localStorage.getItem("bloodDonors")) || [];
 
     const updatedDonors = [...existingDonors, formData];
 
-    localStorage.setItem('bloodDonors', JSON.stringify(updatedDonors));
+    localStorage.setItem("bloodDonors", JSON.stringify(updatedDonors));
 
-    console.log('Dados salvos no localStorage:', updatedDonors);
+    console.log("Dados salvos no localStorage:", updatedDonors);
 
     setFormData({
-      name: '',
-      bloodType: '',
-      cep: '',
-      address: '',
-      city: '',
-      state: '',
+      name: "",
+      bloodType: "",
+      cep: "",
+      address: "",
+      city: "",
+      state: "",
     });
   };
 
   return (
+<<<<<<< HEAD:src/components/index.jsx
     <Container id='form' className="mt-5">
+=======
+    <Container className="mt-5 container_form">
+>>>>>>> 01a1501c68488a14477837d3c9fba8c55ae0e13d:src/components/BloodDonationForm/index.jsx
       <h1>Cadastro de Doação de Sangue</h1>
       <Form onSubmit={handleSubmit}>
         <Form.Group controlId="name">
