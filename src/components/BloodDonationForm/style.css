@@ -1,4 +1,22 @@
 .container_form {
+    font-family: "Montserrat", sans-serif;
+    font-size: 19px;
+    color: #fff;
+    background: linear-gradient(140deg, #047d77, red);
+}
+.container_form h3 {
+    font-size: 24px;
+    margin-top: -2px;
+}
+.container_form .title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+    border-bottom: #fff solid 2px;
+}
+
+.container_form {
     width: 35%;
     border: 2px solid silver;
     padding: 1.3rem;
