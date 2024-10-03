@@ -1,7 +1,18 @@
+.navbar {
+    background-color: #ffffff;
+    border-bottom: #ff0000 solid 3px;
+}
+.nav-link {
+    color: #008000;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    padding: -10px 0;
+}
+.nav-link:hover {
+    border-bottom: #ff0000 solid 2px;
+    transition: 0.3s;
+}
 .content {
-    background-color: blue;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
+    margin: 0 0 0 17px;
 }

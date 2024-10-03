@@ -1,28 +1,44 @@
 .container_form {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 19px;
-    color: #fff;
-    background: linear-gradient(140deg, #047d77, red);
 }
 .container_form h3 {
-    font-size: 24px;
+    font-size: 25px;
     margin-top: -2px;
+}
+.container_form p {
+    font-size: 0.9rem;
+    text-align: center;
+    border-bottom: solid 1px #ff0000;
+    padding-bottom: 1rem;
+    width: 98%;
+    margin-bottom: 0.7rem;
 }
 .container_form .title {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 8px;
-    border-bottom: #fff solid 2px;
+    border-bottom: #fff solid 3px;
 }
 
 .container_form {
     width: 35%;
-    border: 2px solid silver;
+    border: 2px solid rgb(255, 0, 0);
     padding: 1.3rem;
     border-radius: 10px;
     margin-bottom: 2rem;
 }
 .container_form .form-control  {
     margin: 0.1rem 0 1.3rem 0;
+}
+
+.register {
+    background-color: #fff;
+    color: #000;
+    border-color: #ff0000;
+}
+.register:hover {
+    background: #f47979;
+    border-color: #ff0000;
 }

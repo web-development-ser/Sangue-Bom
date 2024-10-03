@@ -1,11 +1,11 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
-// import "./navbar.css"
+import "./navbar.css"
 
 const NavBar = () => {
   return (
     <Navbar className="navbar" bg="light" variant="light" expand="lg">
       <Container className="content">
-        <Navbar.Brand href="#home" style={{ color: "#333" }}>
+        <Navbar.Brand href="#home" >
           <img
             src="https://static.vecteezy.com/system/resources/thumbnails/024/320/053/small/blood-donation-icon-png.png"
             alt="Logo de Doação de Sangue"
@@ -15,13 +15,13 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link href="#services" style={{ color: "#333" }}>
+            <Nav.Link href="#services" >
               Sobre nós
             </Nav.Link>
-            <Nav.Link href="#form" style={{ color: "#333" }}>
+            <Nav.Link href="#form" >
               Doe Sangue
             </Nav.Link>
-            <Nav.Link href="#about" style={{ color: "#333" }}>
+            <Nav.Link href="#about" >
               Contact
             </Nav.Link>
           </Nav>

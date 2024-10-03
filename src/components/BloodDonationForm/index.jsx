@@ -65,7 +65,11 @@ export default function BloodDonationForm() {
   return (
 
     <Container className="mt-5 container_form">
-      <h1>Cadastro de Doação de Sangue</h1>
+      <div className="title">
+        <h3>Cadastro de Doação de Sangue</h3>
+        <span class="material-symbols-outlined">health_metrics</span>
+      </div>
+      <p>Salve Vidas: Um projeto de desenvolvimento dedicado a conectar pessoas e incentivar a doação de sangue, unindo tecnologia e solidariedade para fazer a diferença na vida de muitos.</p>
       <Form onSubmit={handleSubmit}>
         <Form.Group controlId="name">
           <Form.Label>Nome</Form.Label>
@@ -148,7 +152,7 @@ export default function BloodDonationForm() {
 
         {error && <p className="text-danger">{error}</p>}
 
-        <Button variant="primary" type="submit">
+        <Button variant="primary" type="submit" className="register">
           Cadastrar
         </Button>
       </Form>
