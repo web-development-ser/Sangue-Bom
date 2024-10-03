@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import { Table, Container } from 'react-bootstrap';
+import React, { useEffect, useState } from "react";
+import { Table, Container } from "react-bootstrap";
 
 export default function BloodDonorList() {
     const [donors, setDonors] = useState([])
 
     useEffect(() => {
-        const savedDonors = JSON.parse(localStorage.getItem('bloodDonors')) || [];
+        const savedDonors = JSON.parse(localStorage.getItem("bloodDonors")) || [];
         setDonors(savedDonors);
     }, []);
 
