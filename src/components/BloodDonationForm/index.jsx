@@ -64,7 +64,10 @@ export default function BloodDonationForm() {
 
   return (
     <Container className="mt-5 container_form">
-      <h1>Cadastro de Doação de Sangue</h1>
+      <div className='title'>
+        <h3>Cadastro de Doação de Sangue</h3>
+        <span class="material-symbols-outlined">health_metrics</span>
+      </div>
       <Form onSubmit={handleSubmit}>
         <Form.Group controlId="name">
           <Form.Label>Nome</Form.Label>
