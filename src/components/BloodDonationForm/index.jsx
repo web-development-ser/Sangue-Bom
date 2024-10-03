@@ -63,11 +63,8 @@ export default function BloodDonationForm() {
   };
 
   return (
-<<<<<<< HEAD:src/components/index.jsx
-    <Container id='form' className="mt-5">
-=======
+
     <Container className="mt-5 container_form">
->>>>>>> 01a1501c68488a14477837d3c9fba8c55ae0e13d:src/components/BloodDonationForm/index.jsx
       <h1>Cadastro de Doação de Sangue</h1>
       <Form onSubmit={handleSubmit}>
         <Form.Group controlId="name">
